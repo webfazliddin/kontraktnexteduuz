@@ -1,0 +1,160 @@
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .back-img {
+    display: none;
+  }
+  .mainCabinet, .onMobile {
+    display: block;
+  }
+  .main-sidebar {
+    width: 100%;
+  }
+  .offMobile {
+    display: none;
+  }
+  .sidebar .my-info{
+    margin-top: 0px;
+  }
+  .mainApplication {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .router-view {
+    width: 100%;
+  }
+  .my-img, .router-view, .application, .my-info {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 720px !important;
+  }
+  .back-img {
+    display: none;
+  }
+  .logoImgMobile1 {
+    display: block;
+  }
+  .nav-sticky.navbar-custom, .navbar-custom {
+    background-color: #04032d !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mainInfo {
+    margin-top: 0px;
+  }
+  .chance .mainCard {
+    min-height: 100px;
+  }
+  .hero-1-bg .hero-1-title {
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+  }
+  .main-pages {
+    height: 444px;
+    padding-top: 135px;
+    .main_text {
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+      width: 100%;
+    }
+  }
+  .video {
+    .page-title {
+      margin-top: 20px;
+    }
+  }
+  .payment {
+    .page-title {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  .page-title {
+    text-align: center;
+  }
+  .amenities {
+    margin-top: 50px;
+    min-height: auto;
+    padding: 50px 0;
+    height: auto;
+    .amenities-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      .payme {
+        margin-bottom: 40px;
+        text-align: center;
+        .title, .text {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .mainCabinet, .onMobile {
+    display: block;
+  }
+  .main-sidebar {
+    width: 100%;
+  }
+  .offMobile {
+    display: none;
+  }
+  .sidebar .my-info{
+    margin-top: 0px;
+  }
+  .mainApplication {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .router-view {
+    width: 100%;
+  }
+  .my-img, .router-view, .application, .my-info {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 585px) {
+  .container {
+    min-width: 450px;
+    max-width: 585px;
+  }
+  .accCard, .chance .mainCard {
+    max-width: 530px;
+  }
+  .amenities .payme .application_btn {
+    margin-left: 0;
+    width: 100%;
+  }
+  .hero-1-bg .hero-1-title {
+    width: 90%;
+  }
+  .mainCabinet, .onMobile {
+    display: block;
+  }
+  .main-sidebar {
+    width: 100%;
+  }
+  .container {
+    width: 540px !important;
+  }
+  .offMobile {
+    display: none;
+  }
+  .sidebar .my-info{
+    margin-top: 0px;
+  }
+  .mainApplication {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .router-view {
+    width: 100%;
+  }
+  .my-img, .router-view, .application, .my-info {
+    margin-left: 0;
+  }
+}

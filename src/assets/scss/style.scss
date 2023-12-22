@@ -1,0 +1,365 @@
+/* Template Name: Lezir - Responsive Bootstrap 4 Landing Page Template
+   Author: Themesbrand
+   Version: 1.0.0
+   File Description: Main Css file of the template
+*/
+
+/**********************
+01.General
+02.Menu
+03.Components
+04.Helper
+05.Loader
+06.Hero
+07 Why Choose Us
+08.Features
+09.Pricing
+10.Contact
+11.Footer
+12.modal
+***********************/
+@font-face {
+  font-family: "SF-Regular";
+  src: url('../../../public/fonts/SFProText-Regular.ttf');
+}
+
+* {
+  font-family: "SF-Regular" !important;
+}
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap-vue/src/index.scss";
+
+@import "variables";
+@import "general";
+@import "menu";
+@import "components";
+@import "helper";
+@import "loader";
+@import "hero";
+@import "why-choose-us";
+@import "features";
+@import "pricing";
+@import "contact";
+@import "footer";
+@import "modal";
+
+body {
+  overflow-x: hidden;
+}
+
+.cardStyleHover {
+  color: black;
+  border: 1px solid #0879f9 !important;
+  background-color: #f7f7f7 !important;
+}
+
+// .cardStyleHover:hover {
+//   background-color: #0879f9 !important;
+//   color: white;
+// }
+.buttonEnterStyle {
+  width: 275px;
+  margin-right: 353px;
+}
+
+.myButton {
+  width: 150px;
+}
+
+.my-sidebar-body {
+  margin-left: 20px;
+  width: 100%;
+  padding-left: 16px;
+
+  .text-sign {
+    font-size: 20px;
+  }
+
+  .text-info-sign {
+    font-size: 13px;
+  }
+}
+
+.close-icon {
+  text-align: right;
+  width: 100%;
+  padding-right: 12px;
+  padding-top: 24px;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+// OFERTA
+
+.oferta {
+  width: 100%;
+  margin-top: 60px;
+
+  .oferta-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .row {
+      .col {
+        h1 {
+          margin-top: 48px;
+          font-weight: 900;
+          font-size: 40px;
+          //   font-family: Golos;
+          color: black;
+        }
+
+        p {
+          color: black;
+        }
+
+        h5 {
+          color: black;
+        }
+
+        position: relative;
+
+        .oferta-card {
+          width: 100%;
+          height: 700px;
+          overflow-y: scroll;
+          background-color: $oferta-card-bg;
+          padding: 16px 8px;
+          border-radius: 12px;
+        }
+
+        .soglasen {
+          position: absolute;
+          right: -248px;
+          bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.my-info {
+  width: 100%;
+
+  .my-info-container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline>li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline>li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid $success;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.anim-opacity {
+  // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  animation: anim 1s infinite;
+  // box-shadow: 10px 10px 10px 18px rgba(255, 255, 255, 1);
+}
+
+@keyframes anim {
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+  to {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+  }
+}
+
+.my-custom-card {
+  width: 100%;
+  padding: 10px 15px;
+  min-height: 20px;
+  background-color: #f7f7f7;
+  border-radius: 24px;
+
+  small {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .myButton {
+    width: 130px;
+  }
+
+  .buttonEnterStyle {
+    width: 60%;
+    margin-left: 20px;
+    // display: flex;
+    // justify-content: center;
+  }
+
+  .mobileText {
+    font-size: 11px;
+  }
+
+  .hero-1-title {
+    font-size: 16px !important;
+    text-align: center !important;
+    width: 80% !important;
+  }
+
+  .main_text {
+    font-size: 12px !important;
+    width: 70% !important;
+
+  }
+
+  .applicantionText {
+    font-size: 14px;
+  }
+
+  .ContractTextTableView {
+    font-size: 14px;
+  }
+
+  .ContractTextView {
+    font-size: 20px;
+  }
+
+  .backTextViewApp {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .appButton {
+    position: relative;
+    top: -48px;
+  }
+
+  .languageText {
+    margin-left: 10px;
+  }
+
+  .cabinetView {
+    margin-top: 50px;
+  }
+
+  .textImgView {
+    text-align: center;
+  }
+
+  .backTextView {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+
+  .textbackviewstyle {
+    font-size: 22px;
+  }
+
+  .registerText {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+
+  .registerInputView {
+    margin-top: 5px;
+  }
+
+  .registerSelectView {
+    margin-bottom: 5px;
+  }
+
+  .registerButtonView {
+    margin-top: 8px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center !important;
+  }
+
+  .oferta {
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 7px;
+
+    .oferta-container {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .row {
+        .col {
+          h1 {
+            margin-top: 48px;
+            font-weight: 900;
+            font-size: 40px;
+            //   font-family: Golos;
+            color: black;
+          }
+
+          p {
+            color: black;
+          }
+
+          h5 {
+            color: black;
+          }
+
+          position: relative;
+
+          .oferta-card {
+            width: 100%;
+            height: 700px;
+            overflow-y: scroll;
+            background-color: $oferta-card-bg;
+            padding: 16px 8px;
+            border-radius: 12px;
+          }
+
+          .soglasen {
+            position: absolute;
+            right: 15px;
+            bottom: -90px;
+          }
+        }
+      }
+    }
+  }
+}
